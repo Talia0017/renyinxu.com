@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Featured interaction design, UX, and front-end projects by Renyin Xu.">
+  <meta name="theme-color" content="#f2f2f2">
+  <title>Projects | Renyin Xu</title>
+  <link rel="stylesheet" href="/design.css">
+  <script src="/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- Site navigation -->
+  <header class="site-header" data-header>
+    <div class="header-inner">
+      <a class="logo" href="/" aria-label="Renyin Xu — Home">
+        <img src="/img/rx-logo.png" alt="" width="42" height="42">
+      </a>
+
+      <nav class="desktop-nav" aria-label="Primary navigation">
+        <a href="/">Home</a>
+        <a href="/projects/" aria-current="page">Projects</a>
+        <a href="/about/">About me</a>
+        <span class="nav-placeholder" role="link" aria-disabled="true">Playground</span>
+        <a href="https://drive.google.com/file/d/1czHHGd2Y59FcguyfTM58jhsgJPxZa5qf/view?usp=sharing" target="_blank" rel="noopener">Resume</a>
+      </nav>
+
+      <span class="header-contact nav-placeholder" role="link" aria-disabled="true">Contact</span>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu">
+        <span class="menu-toggle__label">Menu</span>
+        <span class="menu-toggle__icon" aria-hidden="true"><i></i><i></i></span>
+      </button>
+    </div>
+
+    <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation">
+      <a href="/">Home</a>
+      <a href="/projects/" aria-current="page">Projects</a>
+      <a href="/about/">About me</a>
+      <span class="nav-placeholder" role="link" aria-disabled="true">Playground</span>
+      <a href="https://drive.google.com/file/d/1czHHGd2Y59FcguyfTM58jhsgJPxZa5qf/view?usp=sharing" target="_blank" rel="noopener">Resume</a>
+      <span class="nav-placeholder" role="link" aria-disabled="true">Contact</span>
+    </nav>
+  </header>
+
+  <main id="main-content" class="projects-page">
+    <section class="project-directory" aria-labelledby="featured-title">
+      <h1 id="featured-title" class="directory-title hero-reveal">FEATURED PROJECTS</h1>
+      <div class="directory-grid">
+        <article class="directory-card reveal">
+          <a class="directory-link" href="https://renyinxu.framer.website/tim">
+            <div class="directory-media">
+              <img src="/img/tim-hortons/tim-cover.png" alt="Three mobile screens showing the redesigned Tim Hortons store-selection and order flow" width="1672" height="941" fetchpriority="high">
+              <span class="directory-arrow" aria-hidden="true">↗</span>
+            </div>
+            <div class="directory-details">
+              <p class="directory-year">2025</p>
+              <h2>Rethinking Store Selection in the Tim Hortons App</h2>
+              <p class="directory-type">Case study · Independent project · Inclusive design</p>
+            </div>
+          </a>
+        </article>
+        <article class="directory-card reveal">
+          <div class="directory-media">
+            <img src="/img/ahsnb/coming-soon.png" alt="Coming soon placeholder for the AHSNB digital experience redesign" width="1254" height="1254">
+          </div>
+          <div class="directory-details">
+            <p class="directory-year">2026</p>
+            <h2>Rebuilding the AHSNB Digital Experience</h2>
+            <p class="directory-type">Summer full-time job · UI/UX design · Front-end development</p>
+            <p class="directory-note">Case study coming soon</p>
+          </div>
+        </article>
+        <article class="directory-card reveal">
+          <div class="directory-media">
+            <img src="/img/ahsnb/coming-soon.png" alt="Coming soon placeholder for ChatGPT Data Transparency Rethinking" width="1254" height="1254" loading="lazy">
+          </div>
+          <div class="directory-details">
+            <p class="directory-year">2026</p>
+            <h2>ChatGPT Data Transparency Rethinking</h2>
+            <p class="directory-type">Case study · Independent project · Privacy &amp; transparency</p>
+            <p class="directory-note">Case study coming soon</p>
+          </div>
+        </article>
+        <article class="directory-card reveal">
+          <div class="directory-media">
+            <img src="/img/ahsnb/coming-soon.png" alt="Coming soon placeholder for STEMBLOCK Website Redesign &amp; Development" width="1254" height="1254" loading="lazy">
+          </div>
+          <div class="directory-details">
+            <p class="directory-year">2025</p>
+            <h2>STEMBLOCK Website Redesign &amp; Development</h2>
+            <p class="directory-type">Summer part-time job · UI/UX design · Front-end development</p>
+            <p class="directory-note">Case study coming soon</p>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- Contact and footer -->
+  <footer class="contact" id="contact">
+    <div class="contact-inner reveal">
+      <p class="eyebrow">Contact me</p>
+      <h2>Let’s make something thoughtful.</h2>
+      <a class="contact-email" href="mailto:xutalia83@gmail.com">xutalia83@gmail.com <span aria-hidden="true">↗</span></a>
+      <div class="contact-details">
+        <div><p>Phone</p><a href="tel:+15064293032">+1 (506) 429 3032</a></div>
+        <div><p>Connect</p><a href="https://www.linkedin.com/in/renyin-xu" target="_blank" rel="noopener">LinkedIn</a><a href="https://www.instagram.com/tuk_xu/" target="_blank" rel="noopener">Instagram</a></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <a class="logo logo--footer" href="#main-content" aria-label="Back to top"><img src="/img/rx-logo.png" alt="" width="42" height="42"></a>
+      <p>© <span id="current-year">2026</span> Renyin Xu</p>
+      <a href="#main-content">Back to top ↑</a>
+    </div>
+  </footer>
+</body>
+</html>
