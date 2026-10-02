@@ -1,0 +1,13 @@
+{
+  "name": "renyinxu.com",
+  "version": "1.0.0",
+  "description": "Renyin Xu's portfolio website",
+  "private": true,
+  "scripts": {
+    "dev": "python3 -m http.server 8000",
+    "start": "python3 -m http.server 8000"
+  },
+  "dependencies": {
+    "@vercel/analytics": "^1.1.1"
+  }
+}
