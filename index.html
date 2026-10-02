@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Renyin Xu is an interaction designer creating thoughtful, inclusive digital product experiences.">
+  <meta name="theme-color" content="#f2f2f2">
+  <title>Renyin Xu | Interaction Designer</title>
+  <link rel="stylesheet" href="design.css">
+  <script src="main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- Site navigation -->
+  <header class="site-header" data-header>
+    <div class="header-inner">
+      <a class="logo" href="#home" aria-label="Renyin Xu — Home">
+        <img src="img/rx-logo.png" alt="" width="42" height="42">
+      </a>
+
+      <nav class="desktop-nav" aria-label="Primary navigation">
+        <a href="#home" data-section-link="home" aria-current="page">Home</a>
+        <a href="#projects" data-section-link="projects">Projects</a>
+        <a href="https://renyinxu.framer.website/aboutme">About me</a>
+        <a href="https://renyinxu.framer.website/fun">Fun</a>
+        <a href="https://drive.google.com/file/d/1czHHGd2Y59FcguyfTM58jhsgJPxZa5qf/view?usp=sharing" target="_blank" rel="noopener">Resume</a>
+      </nav>
+
+      <a class="header-contact" href="#contact" data-section-link="contact">Contact</a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu">
+        <span class="menu-toggle__label">Menu</span>
+        <span class="menu-toggle__icon" aria-hidden="true"><i></i><i></i></span>
+      </button>
+    </div>
+
+    <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation">
+      <a href="#home" data-section-link="home">Home</a>
+      <a href="#projects" data-section-link="projects">Projects</a>
+      <a href="https://renyinxu.framer.website/aboutme">About me</a>
+      <a href="https://renyinxu.framer.website/fun">Fun</a>
+      <a href="https://drive.google.com/file/d/1czHHGd2Y59FcguyfTM58jhsgJPxZa5qf/view?usp=sharing" target="_blank" rel="noopener">Resume</a>
+      <a href="#contact" data-section-link="contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <!-- Hero introduction -->
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="hero-content">
+        <p class="hero-greeting hero-reveal">Hi I’m</p>
+        <div class="role-window hero-reveal" aria-label="Designer roles">
+          <p class="hero-role" id="rotating-role">an interaction designer</p>
+        </div>
+        <h1 class="hero-name hero-reveal" id="hero-title">Renyin Xu</h1>
+        <p class="hero-introduction hero-reveal">I’m an Interaction Designer focused on thoughtful UX and inclusive product experiences, with the front-end skills to bring ideas closer to life</p>
+      </div>
+      <a class="scroll-cue hero-reveal" href="#projects">
+        <span>Selected work</span>
+        <span aria-hidden="true">↓</span>
+      </a>
+    </section>
+
+    <!-- Selected projects -->
+    <section class="projects section" id="projects" aria-labelledby="projects-title">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Selected projects</p>
+        <h2 id="projects-title">Designing clearer digital experiences.</h2>
+        <a class="text-link" href="https://renyinxu.framer.website/project">View all projects <span aria-hidden="true">↗</span></a>
+      </div>
+
+      <div class="project-list">
+        <article class="project-card reveal">
+          <a class="project-media" href="https://renyinxu.framer.website/tim" aria-label="Read the Tim Hortons store-selection redesign case study">
+            <img src="img/tim/tim_cover.png" alt="Three mobile screens showing the redesigned Tim Hortons store-selection and order flow" width="1672" height="941">
+            <span class="project-action" aria-hidden="true">View case study ↗</span>
+          </a>
+          <div class="project-details">
+            <div class="project-number" aria-hidden="true">01</div>
+            <p class="project-year">2025</p>
+            <h3>Rethinking Store Selection in the Tim Hortons App</h3>
+            <dl class="project-meta">
+              <div><dt>Project type</dt><dd>Case study</dd></div>
+              <div><dt>Contribution</dt><dd>Independent project · Inclusive design</dd></div>
+            </dl>
+            <a class="text-link" href="https://renyinxu.framer.website/tim">Read the case study <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+
+        <article class="project-card project-card--reverse reveal">
+          <div class="project-media project-media--pending" aria-label="AHSNB digital experience project image coming soon">
+            <img src="img/coming soon.png" alt="Coming soon placeholder for the AHSNB digital experience redesign" width="1254" height="1254">
+            <span class="project-status">Case study coming soon</span>
+          </div>
+          <div class="project-details">
+            <div class="project-number" aria-hidden="true">02</div>
+            <p class="project-year">2026</p>
+            <h3>Rebuilding the AHSNB Digital Experience</h3>
+            <dl class="project-meta">
+              <div><dt>Project type</dt><dd>Summer full-time job</dd></div>
+              <div><dt>Contribution</dt><dd>UI/UX design · Front-end development</dd></div>
+            </dl>
+            <p class="project-note">Detailed case study in progress.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Desktop: this short sequence stays pinned while the panels move sideways. -->
+    <section class="story" id="principles" aria-label="Design beliefs and work approach">
+      <div class="story-stage">
+        <div class="story-progress" aria-hidden="true"><i></i></div>
+        <div class="story-track">
+          <article class="story-panel">
+            <div class="story-copy">
+              <p class="eyebrow">01 · Design beliefs</p>
+              <h2>My Beliefs as an Interaction Designer</h2>
+              <p class="story-intro">I believe good interaction design starts with understanding people. Through research and attention to detail, I aim to create clear, inclusive experiences that help people feel confident and bring ease and enjoyment to everyday interactions.</p>
+            </div>
+            <ol class="principle-list">
+              <li><span>01</span><div><h3>Research first</h3><p>Understand before creating.</p></div></li>
+              <li><span>02</span><div><h3>Small cues matter</h3><p>Labels, timing, and reassurance shape confidence.</p></div></li>
+              <li><span>03</span><div><h3>Inclusive by default</h3><p>Design for different abilities and expectations.</p></div></li>
+            </ol>
+          </article>
+
+          <article class="story-panel story-panel--red">
+            <div class="story-copy">
+              <p class="eyebrow">02 · Work approach</p>
+              <h2>My Approach to Work</h2>
+              <p class="story-intro">I take ownership of my work, plan with purpose, and strive to go beyond expectations while meeting deadlines. I value clear communication and collaboration across teams, and I use feedback and reflection to keep improving.</p>
+            </div>
+            <ol class="principle-list">
+              <li><span>01</span><div><h3>Ownership</h3><p>Plan clearly and follow through.</p></div></li>
+              <li><span>02</span><div><h3>Collaboration</h3><p>Share progress and ask early.</p></div></li>
+              <li><span>03</span><div><h3>Growth</h3><p>Reflect, seek feedback, and apply it.</p></div></li>
+            </ol>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills and services -->
+    <section class="capabilities section" id="services" aria-labelledby="capabilities-title">
+      <div class="section-heading reveal">
+        <p class="eyebrow">What I can do</p>
+        <h2 id="capabilities-title">From understanding the problem to bringing the experience to life.</h2>
+        <a class="text-link" href="https://renyinxu.framer.website/aboutme">Learn more about me <span aria-hidden="true">↗</span></a>
+      </div>
+
+      <div class="capability-grid">
+        <article class="capability-card reveal">
+          <p class="capability-number">01</p>
+          <h3>UX Research &amp; Strategy</h3>
+          <ul>
+            <li>Uncover user needs through research, observation, and contextual analysis</li>
+            <li>Identify friction points, accessibility barriers, and opportunities for improvement</li>
+            <li>Map user journeys and flows to understand how people move through an experience</li>
+            <li>Translate insights into clear design decisions, product direction, and measurable experience goals</li>
+          </ul>
+        </article>
+        <article class="capability-card reveal">
+          <p class="capability-number">02</p>
+          <h3>UI &amp; Interaction Design</h3>
+          <ul>
+            <li>Logo and brand identity design</li>
+            <li>Social media graphics and ad creatives</li>
+            <li>Infographics and data visualization</li>
+            <li>Custom illustrations and icons</li>
+          </ul>
+        </article>
+        <article class="capability-card reveal">
+          <p class="capability-number">03</p>
+          <h3>Design to Development</h3>
+          <ul>
+            <li>Responsive website design</li>
+            <li>Landing page design and optimization</li>
+            <li>Webflow development and customization</li>
+            <li>Website maintenance and updates</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- Contact and footer -->
+  <footer class="contact" id="contact">
+    <div class="contact-inner reveal">
+      <p class="eyebrow">Contact me</p>
+      <h2>Let’s make something thoughtful.</h2>
+      <a class="contact-email" href="mailto:xutalia83@gmail.com">xutalia83@gmail.com <span aria-hidden="true">↗</span></a>
+      <div class="contact-details">
+        <div><p>Phone</p><a href="tel:+15064293032">+1 (506) 429 3032</a></div>
+        <div><p>Connect</p><a href="https://www.linkedin.com/in/renyin-xu" target="_blank" rel="noopener">LinkedIn</a><a href="https://www.instagram.com/tuk_xu/" target="_blank" rel="noopener">Instagram</a></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <a class="logo logo--footer" href="#home" aria-label="Back to top"><img src="img/rx-logo.png" alt="" width="42" height="42"></a>
+      <p>© <span id="current-year">2026</span> Renyin Xu</p>
+      <a href="#home">Back to top ↑</a>
+    </div>
+  </footer>
+</body>
+</html>
