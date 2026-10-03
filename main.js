@@ -233,6 +233,54 @@ document.querySelector("#current-year").textContent = new Date().getFullYear();
   updateAboutMotion();
 })();
 
+// ---------- Tim case study: stage navigation and three-step journey ----------
+(() => {
+  const study = document.querySelector('.case-study');
+  const nav = study?.querySelector('.case-index');
+  if (!study || !nav) return;
+
+  const sections = [...study.querySelectorAll('[data-case-section]')];
+  const links = [...nav.querySelectorAll('a[href^="#"]')];
+  const journey = study.querySelector('[data-case-journey]');
+  const journeyStage = journey?.querySelector('.case-journey__stage');
+  const journeyTrack = journey?.querySelector('.case-journey__track');
+  const horizontalMotion = window.matchMedia('(min-width: 761px) and (prefers-reduced-motion: no-preference)');
+  let caseFrame = 0;
+
+  function updateCaseStudy() {
+    caseFrame = 0;
+    const readingLine = document.querySelector('[data-header]').offsetHeight + Math.min(180, window.innerHeight * .28);
+    let current = sections[0];
+    sections.forEach(section => {
+      if (section.getBoundingClientRect().top <= readingLine) current = section;
+    });
+    links.forEach(link => {
+      const active = link.hash === `#${current.id}`;
+      if (active) link.setAttribute('aria-current', 'step');
+      else link.removeAttribute('aria-current');
+    });
+
+    if (journey && journeyStage && journeyTrack && horizontalMotion.matches) {
+      const rect = journey.getBoundingClientRect();
+      const scrollDistance = Math.max(1, journey.offsetHeight - journeyStage.offsetHeight);
+      const progress = clamp(-rect.top / scrollDistance, 0, 1);
+      const travel = Math.max(0, journeyTrack.scrollWidth - journeyStage.clientWidth);
+      journey.style.setProperty('--case-journey-x', `${(-travel * progress).toFixed(1)}px`);
+    } else if (journey) {
+      journey.style.removeProperty('--case-journey-x');
+    }
+  }
+
+  function scheduleCaseStudy() {
+    if (!caseFrame) caseFrame = requestAnimationFrame(updateCaseStudy);
+  }
+  window.addEventListener('scroll', scheduleCaseStudy, { passive: true });
+  window.addEventListener('resize', scheduleCaseStudy);
+  horizontalMotion.addEventListener('change', scheduleCaseStudy);
+  window.addEventListener('load', scheduleCaseStudy, { once: true });
+  updateCaseStudy();
+})();
+
 // ---------- Outside the Pixels: accessible interest tabs, no autoplay ----------
 (() => {
   const section = document.querySelector('.outside-pixels');
