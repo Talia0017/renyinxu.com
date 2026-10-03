@@ -1,0 +1,108 @@
+Tim Hortons 页面手动上传清单
+更新日期：2026-10-03
+
+最新调整：引用恢复文字依次入场；等整句话入场完成后，missing 才由深色渐变为浅灰色。
+hidden 保持黑色。已在桌面、平板和手机尺寸检查动画先后顺序与减少动态效果。
+如果上一轮文件都已上传，本次需替换 projects/tim/ 中的 index.html、case-study.css 和 case-study.js。
+修复后的入场触发逻辑继续保留；快速滚动不会错误跳过目标动画，后台标签页不会提前消耗待播放动画。
+
+其他动效保持不变：
+三步连线随原生滚动推进；修正人物轮播页码闪动，缓存导航位置并完善动画清理。
+正常页面滚动保持自由，没有全屏覆盖层、固定滚动区或滚动锁定。
+如果已经上传过上一版，只需重新上传 projects/tim/ 中的 index.html、case-study.css 和 case-study.js。
+本次没有新增素材，字体和图片不需要重复上传。
+
+一、本次需要替换或新增的页面文件
+
+把本地 projects/tim 文件夹中的以下文件，放到 GitHub 的同名路径：
+
+projects/tim/index.html                 替换旧文件
+projects/tim/case-study.css             新增；如果已有同名文件则替换
+projects/tim/case-study.js              新增；如果已有同名文件则替换
+projects/tim/fonts/InterVariable.woff2  新增可变字体，正文使用 450 字重
+projects/tim/fonts/OFL.txt              字体授权文件，一并上传
+
+本地 projects/tim/ 内只有以上五个部署文件，可以完整上传这个文件夹。
+在 GitHub 的 projects/ 目录中上传 tim/，不要把 tim/ 放到仓库根目录。
+
+二、上一轮完整改版新增的素材
+
+如果还没有上传过这轮 Tim 改版，还需要上传 img/tim/refined/ 中的五个文件：
+
+img/tim/refined/phone-frame.png
+img/tim/refined/order-preparation.png
+img/tim/refined/paper-address-list.webp
+img/tim/refined/prototype-poster.webp
+img/tim/refined/prototype-portrait.mp4
+
+在 GitHub 的 img/tim/ 目录中上传 refined/。
+同名文件应替换。竖版视频约 20 MB，保留原视频内容及音轨。
+页面使用的是视频演示，并非可直接操作的 ProtoPie 在线嵌入。
+
+三、页面还会使用的现有图片
+
+如果 GitHub 已经有以下文件且内容正确，不必重复上传；若缺少，请按相同路径补上：
+
+img/tim/tim_coverb.png
+img/tim/tim_org_location.png
+img/tim/tim_personaa.png
+img/tim/tim_personab.png
+img/tim/tim_personac.png
+img/tim/user_journey_map_tim_hortons_redesign_renyin_xu.jpg
+img/tim/2026-08-06_183950_646.png
+img/tim/final-location-selection.png
+img/tim/final-cart-confirmation.png
+
+共享依赖仍是仓库根目录下的 design.css、main.js，以及 img/rx-logo.png。
+这些文件本次没有修改，首页、About 页面和 Projects 列表页也没有修改。
+共享标题字体沿用 design.css 中现有的 Framer 字体地址；新正文可变字体在本地托管。
+
+四、不要上传的内容
+
+不要上传 local-backups/、临时测试文件或本清单。
+不要为了这个页面上传整个 img/tim/：其中有未使用的旧图片和原视频。
+img/tim/final-order-preparation.png 是旧版本误用的素材，新页面不再引用它。
+原版照片、原视频及其他旧素材均已保留，不需要删除。
+github-upload-ready/ 是之前 About 页的上传包，本次未改动，不包含这次 Tim 更新。
+
+五、简单操作
+
+1. 在 GitHub 仓库中打开 projects/，选择 Add file → Upload files。
+2. 将本地 projects/tim/ 文件夹拖入，检查结果路径以 projects/tim/ 开头。
+3. 再到仓库的 img/tim/，上传本地 refined/ 文件夹。
+4. 如果第三部分列出的旧素材在仓库里缺失，在 img/tim/ 补传它们。
+5. 页面和素材路径必须保留大小写。GitHub 上已有同名文件时，用新文件替换。
+
+我没有执行 Git 提交、推送或部署。GitHub 的最终保存操作由你手动完成。
+
+六、恢复与验证
+
+完整改版前的代码和 Tim 素材：
+local-backups/tim-before-refinement-2026-10-02/
+
+本次正文与动画调整前的三个页面文件：
+local-backups/tim-before-motion-update-2026-10-03/
+
+移除引用全屏覆盖层之前的代码：
+local-backups/tim-before-inline-quote-2026-10-03/
+
+最新动效优化之前的代码与验证记录：
+local-backups/tim-before-motion-polish-2026-10-03/
+
+本轮动画可见性修复之前的 CSS、JavaScript：
+local-backups/tim-before-visible-motion-2026-10-03/
+
+恢复逐词引用和渐变顺序之前的三个页面文件：
+local-backups/tim-before-quote-sequence-2026-10-03/
+
+已在本地 Chromium 渲染检查 1440、1024、768、390、320px 宽度。
+已检查四阶段导航、无横向溢出、图片路径、450 字重加载、
+人物轮播与手动暂停、视频播放及跳转到后段、减少动态效果和禁用 JavaScript 的退化布局。
+最新动效检查覆盖 1440、1024、768、390、320px：慢滚、快滚、反向滚动、导航点击、
+缩放窗口、延迟图片加载、人物轮播、视频播放与跳转、重复初始化和退化布局。
+引用整句短暂显现；减少动态效果及禁用 JavaScript 时全部正文仍可读。
+原文和素材路径保持一致，其他页面及共享样式、脚本没有修改。
+相同浏览器滚动记录中，位置测量由 995 次降至 0 次，导航属性写入由 205 次降至 13 次。
+这是减少重复工作的诊断结果，不是帧率提升承诺；两次滚动记录均无长任务或布局偏移。
+延迟图片加载前后手机尺寸、页面总高度及阶段位置一致；冷加载另有极小的页头文字位移（CLS 约 0.00065）。
+这些是本地浏览器检查；尚未进行上线后或真实 iOS/Safari 设备测试。
