@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Meet Renyin Xu (Talia), an Interaction Design student at Sheridan College focused on clear, inclusive digital experiences.">
+  <meta name="theme-color" content="#f2f2f2">
+  <title>About Me | Renyin Xu</title>
+  <link rel="icon" type="image/png" href="/img/rx-logo.png">
+  <link rel="stylesheet" href="/design.css">
+  <script src="/main.js" defer></script>
+</head>
+<body class="about-view">
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- Site navigation -->
+  <header class="site-header" data-header>
+    <div class="header-inner">
+      <a class="logo" href="/" aria-label="Renyin Xu — Home">
+        <img src="/img/rx-logo.png" alt="" width="42" height="42">
+      </a>
+
+      <nav class="desktop-nav" aria-label="Primary navigation">
+        <a href="/">Home</a>
+        <a href="/projects/">Projects</a>
+        <a href="/about/" aria-current="page">About me</a>
+        <span class="nav-placeholder" role="link" aria-disabled="true">Playground</span>
+        <a href="https://drive.google.com/file/d/1fE9w9aS_xGHMlqv6I4rMiQgSVd6DVYRs/view?usp=sharing" target="_blank" rel="noopener">Resume</a>
+      </nav>
+
+      <span class="header-contact nav-placeholder" role="link" aria-disabled="true">Contact</span>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu">
+        <span class="menu-toggle__label">Menu</span>
+        <span class="menu-toggle__icon" aria-hidden="true"><i></i><i></i></span>
+      </button>
+    </div>
+
+    <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation">
+      <a href="/">Home</a>
+      <a href="/projects/">Projects</a>
+      <a href="/about/" aria-current="page">About me</a>
+      <span class="nav-placeholder" role="link" aria-disabled="true">Playground</span>
+      <a href="https://drive.google.com/file/d/1fE9w9aS_xGHMlqv6I4rMiQgSVd6DVYRs/view?usp=sharing" target="_blank" rel="noopener">Resume</a>
+      <span class="nav-placeholder" role="link" aria-disabled="true">Contact</span>
+    </nav>
+  </header>
+
+  <main id="main-content" class="about-page">
+    <section class="about-intro" aria-labelledby="about-title">
+      <div class="about-copy">
+        <p class="eyebrow hero-reveal">You can call me Talia</p>
+        <h1 id="about-title"><span class="about-title-mask"><span>Hi, I’m</span></span><span class="about-title-mask"><span>Renyin Xu</span></span></h1>
+        <p class="about-lead hero-reveal">I study Interaction Design at Sheridan College, with an expected graduation in June 2028. I design clear, inclusive digital experiences through user research, thoughtful interactions, and attention to the details that make everyday tasks easier.</p>
+        <dl class="about-facts hero-reveal">
+          <div><dt>Program</dt><dd>Honours Bachelor of Interaction Design</dd></div>
+          <div><dt>Graduating</dt><dd>June 2028</dd></div>
+          <div><dt>Location</dt><dd>Oakville, Ontario</dd></div>
+        </dl>
+      </div>
+      <div class="about-photos" aria-label="A few moments from my life">
+        <figure class="about-photo about-photo--main" data-photo-speed="0.045"><img src="/img/about/optimized/about-me-a.webp" alt="Renyin in a white dress among flowering hydrangeas in a garden" width="1346" height="1800" decoding="async" fetchpriority="high"></figure>
+        <figure class="about-photo about-photo--b" data-photo-speed="-0.025"><img src="/img/about/optimized/about-me-b.webp" alt="Renyin and another attendee wearing BearHacks lanyards" width="1164" height="1800" decoding="async" loading="lazy"></figure>
+        <figure class="about-photo about-photo--c" data-photo-speed="0.07"><img src="/img/about/optimized/about-me-c.webp" alt="Renyin wearing a fluffy Hello Kitty hat and holding a plush toy in a shop" width="1014" height="1800" decoding="async" loading="lazy"></figure>
+      </div>
+      <a class="about-scroll" href="#about-approach"><span>Scroll to explore</span><span aria-hidden="true">↓</span></a>
+    </section>
+    <section class="about-approach" id="about-approach" aria-label="Design approach">
+      <div class="approach-sticky">
+        <p class="eyebrow">01 / Approach</p>
+        <p class="approach-statement">Clear, inclusive<br>digital experiences.</p>
+        <p class="approach-support">I use user research to shape thoughtful interactions. I focus on the details that make everyday&nbsp;tasks&nbsp;easier.</p>
+        <div class="approach-progress" aria-hidden="true"><span></span></div>
+      </div>
+    </section>
+    <section class="about-section about-skills-section" aria-labelledby="skills-title">
+      <div class="about-section-aside">
+        <p class="eyebrow">02 / Skills</p>
+        <h2 id="skills-title" class="about-section-title">Skills</h2>
+        <nav class="skill-index" aria-label="Skill categories">
+          <a href="#skill-strategy">01 <span>UX &amp; Strategy</span></a>
+          <a href="#skill-interaction">02 <span>UI &amp; Interaction</span></a>
+          <a href="#skill-testing">03 <span>Prototyping &amp; Testing</span></a>
+        </nav>
+      </div>
+      <div class="about-skills">
+        <div class="about-skill-group reveal" id="skill-strategy"><p class="skill-number" aria-hidden="true">01</p><h3>UX &amp; Strategy</h3><ul><li>User research</li><li>Research synthesis</li><li>Journey mapping</li><li>Information architecture</li><li>User flows</li><li>Inclusive design</li></ul></div>
+        <div class="about-skill-group reveal" id="skill-interaction"><p class="skill-number" aria-hidden="true">02</p><h3>UI &amp; Interaction</h3><ul><li>Wireframing</li><li>High-fidelity UI</li><li>Interaction design</li><li>Design systems</li><li>Responsive design</li><li>Accessibility</li></ul></div>
+        <div class="about-skill-group reveal" id="skill-testing"><p class="skill-number" aria-hidden="true">03</p><h3>Prototyping &amp; Testing</h3><ul><li>Paper prototyping</li><li>Interactive prototyping</li><li>Usability testing</li><li>ProtoPie</li><li>Figma prototyping</li><li>Design iteration</li></ul></div>
+      </div>
+    </section>
+    <section class="about-section about-tools-section" aria-labelledby="tools-title">
+      <div class="tools-stage">
+      <div class="tools-heading"><p class="eyebrow">03 / Tools</p><h2 id="tools-title" class="about-section-title">Tools &amp;<br>Technology</h2></div>
+      <div class="tools-window">
+      <ul class="about-tools">
+        <li class="about-tool"><span class="tool-logo"><img src="/img/logos/tools/figma.svg" alt="" width="48" height="48" loading="lazy" decoding="async"></span><span>Figma</span></li>
+        <li class="about-tool"><span class="tool-logo"><img src="/img/logos/tools/protopie.png" alt="" width="48" height="48" loading="lazy" decoding="async"></span><span>ProtoPie</span></li>
+        <li class="about-tool"><span class="tool-logo"><img src="/img/logos/tools/adobe-photoshop.png" alt="" width="48" height="48" loading="lazy" decoding="async"></span><span>Adobe Photoshop</span></li>
+        <li class="about-tool"><span class="tool-logo"><img src="/img/logos/tools/adobe-illustrator.png" alt="" width="48" height="48" loading="lazy" decoding="async"></span><span>Adobe Illustrator</span></li>
+        <li class="about-tool"><span class="tool-logo"><img src="/img/logos/tools/adobe-after-effects.png" alt="" width="48" height="48" loading="lazy" decoding="async"></span><span>Adobe After Effects</span></li>
+        <li class="about-tool"><span class="tool-logo"><img src="/img/logos/tools/adobe-indesign.png" alt="" width="48" height="48" loading="lazy" decoding="async"></span><span>Adobe InDesign</span></li>
+        <li class="about-tool"><span class="tool-logo"><img src="/img/logos/tools/cinema-4d.png" alt="" width="48" height="48" loading="lazy" decoding="async"></span><span>Cinema 4D</span></li>
+        <li class="about-tool"><span class="tool-logo"><img src="/img/logos/tools/procreate.png" alt="" width="48" height="48" loading="lazy" decoding="async"></span><span>Procreate</span></li>
+        <li class="about-tool"><span class="tool-logo"><img src="/img/logos/tools/html5.svg" alt="" width="48" height="48" loading="lazy" decoding="async"></span><span>HTML5</span></li>
+        <li class="about-tool"><span class="tool-logo"><img src="/img/logos/tools/css3.svg" alt="" width="48" height="48" loading="lazy" decoding="async"></span><span>CSS3</span></li>
+        <li class="about-tool"><span class="tool-logo"><img src="/img/logos/tools/javascript.svg" alt="" width="48" height="48" loading="lazy" decoding="async"></span><span>JavaScript</span></li>
+      </ul>
+      </div>
+      <div class="tools-progress" aria-hidden="true"><span></span></div>
+      </div>
+    </section>
+    <section class="about-section about-experience" aria-labelledby="experience-title">
+      <div class="about-section-aside"><p class="eyebrow">04 / Experience</p><h2 id="experience-title" class="about-section-title">Experience</h2></div>
+      <ol class="experience-list">
+        <li class="experience-entry reveal">
+          <div class="company-logo"><img src="/img/logos/companies/asian-heritage-society-of-new-brunswick.png" alt="" width="1144" height="1144" loading="lazy" decoding="async"></div>
+          <div class="experience-copy"><h3>Asian Heritage Society of New Brunswick</h3><p>UI/UX Web Designer &amp; Developer</p></div>
+          <p class="experience-dates"><time datetime="2026-05">May 2026</time> – <time datetime="2026-07">Jul 2026</time></p>
+        </li>
+        <li class="experience-entry reveal">
+          <div class="company-logo"><img src="/img/logos/companies/stemblock.png" alt="" width="580" height="160" loading="lazy" decoding="async"></div>
+          <div class="experience-copy"><h3>STEMBlock</h3><p>UI/UX Web Designer &amp; Developer</p></div>
+          <p class="experience-dates"><time datetime="2025-05">May 2025</time> – <time datetime="2025-09">Sep 2025</time></p>
+        </li>
+        <li class="experience-entry reveal">
+          <div class="company-logo"><img src="/img/logos/companies/baozun.png" alt="" width="738" height="228" loading="lazy" decoding="async"></div>
+          <div class="experience-copy"><h3>BAOZUN Inc.</h3><p>2D Animation Commercial Project</p></div>
+          <p class="experience-dates"><time datetime="2024-03">Mar 2024</time> – <time datetime="2024-04">Apr 2024</time></p>
+        </li>
+        <li class="experience-entry reveal">
+          <div class="company-logo"><img src="/img/logos/companies/pollipop-transparent.png" alt="" width="1200" height="628" loading="lazy" decoding="async"></div>
+          <div class="experience-copy"><h3>Pollipop</h3><p>Multimedia Designer</p></div>
+          <p class="experience-dates"><time datetime="2024-02">Feb 2024</time> – <time datetime="2024-05">May 2024</time></p>
+        </li>
+      </ol>
+    </section>
+    <section class="about-section outside-pixels" id="off-the-clock" aria-labelledby="outside-title">
+      <div class="outside-copy">
+        <p class="eyebrow reveal">04 · Outside the Pixels</p>
+        <h2 id="outside-title" class="outside-title reveal">A little life<br>beyond the screen.</h2>
+        <p class="outside-intro reveal">Away from the screen, I recharge through movement, making things by hand, and spending time outdoors.</p>
+        <div class="outside-tabs" role="tablist" aria-label="Personal interests">
+          <button type="button" role="tab" id="interest-badminton" aria-controls="photos-badminton" aria-selected="true" tabindex="0" class="outside-tab reveal" style="--interest-delay: 0ms"><span class="outside-number">01</span><span>Badminton</span><span class="outside-arrow" aria-hidden="true">↗</span></button>
+          <button type="button" role="tab" id="interest-baking" aria-controls="photos-baking" aria-selected="false" tabindex="-1" class="outside-tab reveal" style="--interest-delay: 70ms"><span class="outside-number">02</span><span>Baking &amp; Cooking</span><span class="outside-arrow" aria-hidden="true">↗</span></button>
+          <button type="button" role="tab" id="interest-flowers" aria-controls="photos-flowers" aria-selected="false" tabindex="-1" class="outside-tab reveal" style="--interest-delay: 140ms"><span class="outside-number">03</span><span>Flowers</span><span class="outside-arrow" aria-hidden="true">↗</span></button>
+          <button type="button" role="tab" id="interest-fishing" aria-controls="photos-fishing" aria-selected="false" tabindex="-1" class="outside-tab reveal" style="--interest-delay: 210ms"><span class="outside-number">04</span><span>Fishing</span><span class="outside-arrow" aria-hidden="true">↗</span></button>
+        </div>
+      </div>
+      <div class="outside-panels">
+        <div class="outside-panel" role="tabpanel" id="photos-badminton" aria-labelledby="interest-badminton" tabindex="0">
+          <p class="outside-caption">I’ve played badminton since I was six, and represented Team New Brunswick at the 2023 Canada Games.</p>
+          <div class="outside-collage outside-collage--4">
+            <figure class="outside-photo" style="--photo-delay: 0ms"><img src="/img/about/fun/optimized/fun-a.webp" width="1800" height="1200" alt="Renyin wearing a Canadian flag at a badminton event" draggable="false" loading="lazy" decoding="async"></figure>
+            <figure class="outside-photo" style="--photo-delay: 35ms"><img src="/img/about/fun/optimized/fun-b.webp" width="1440" height="1794" alt="Playing a badminton rally on an indoor court" draggable="false" loading="lazy" decoding="async"></figure>
+            <figure class="outside-photo" style="--photo-delay: 70ms"><img src="/img/about/fun/optimized/fun-c.webp" width="1440" height="1800" alt="Practising badminton on an indoor court" draggable="false" loading="lazy" decoding="async"></figure>
+            <figure class="outside-photo" style="--photo-delay: 105ms"><img src="/img/about/fun/optimized/fun-d.webp" width="754" height="754" alt="A young badminton player preparing a shot" draggable="false" loading="lazy" decoding="async"></figure>
+          </div>
+          <div class="photo-deck-controls">
+            <button type="button" class="photo-deck-prev" aria-label="Previous photo"><span aria-hidden="true">←</span></button>
+            <p class="photo-deck-count" aria-live="polite" aria-atomic="true"></p>
+            <button type="button" class="photo-deck-next" aria-label="Next photo"><span aria-hidden="true">→</span></button>
+          </div>
+          <p class="photo-deck-hint">Drag or swipe to swap photos</p>
+        </div>
+        <div class="outside-panel" role="tabpanel" id="photos-baking" aria-labelledby="interest-baking" tabindex="0" hidden>
+          <p class="outside-caption">Trying new recipes and making things worth sharing.</p>
+          <div class="outside-collage outside-collage--5">
+            <figure class="outside-photo" style="--photo-delay: 0ms"><img src="/img/about/fun/optimized/fun-e.webp" width="1800" height="1339" alt="Rows of freshly baked green and chocolate cookies" draggable="false" loading="lazy" decoding="async"></figure>
+            <figure class="outside-photo" style="--photo-delay: 35ms"><img src="/img/about/fun/optimized/fun-f.webp" width="1147" height="1800" alt="A homemade meal with eggs, vegetables, and toast" draggable="false" loading="lazy" decoding="async"></figure>
+            <figure class="outside-photo" style="--photo-delay: 70ms"><img src="/img/about/fun/optimized/fun-g.webp" width="1440" height="1080" alt="A decorated layered cake" draggable="false" loading="lazy" decoding="async"></figure>
+            <figure class="outside-photo" style="--photo-delay: 105ms"><img src="/img/about/fun/optimized/fun-h.webp" width="1017" height="1800" alt="Green tea loaf cake and ice cream" draggable="false" loading="lazy" decoding="async"></figure>
+            <figure class="outside-photo" style="--photo-delay: 140ms"><img src="/img/about/fun/optimized/fun-i.webp" width="1350" height="1800" alt="Two plates of omelette rice with curry" draggable="false" loading="lazy" decoding="async"></figure>
+          </div>
+          <div class="photo-deck-controls">
+            <button type="button" class="photo-deck-prev" aria-label="Previous photo"><span aria-hidden="true">←</span></button>
+            <p class="photo-deck-count" aria-live="polite" aria-atomic="true"></p>
+            <button type="button" class="photo-deck-next" aria-label="Next photo"><span aria-hidden="true">→</span></button>
+          </div>
+          <p class="photo-deck-hint">Drag or swipe to swap photos</p>
+        </div>
+        <div class="outside-panel" role="tabpanel" id="photos-flowers" aria-labelledby="interest-flowers" tabindex="0" hidden>
+          <p class="outside-caption">I love choosing flowers, turning them into bouquets for friends, and spending time arranging and caring for plants.</p>
+          <div class="outside-collage outside-collage--5">
+            <figure class="outside-photo" style="--photo-delay: 0ms"><img src="/img/about/fun/optimized/fun-j.webp" width="1800" height="1797" alt="Pale pink orchids in bloom" draggable="false" loading="lazy" decoding="async"></figure>
+            <figure class="outside-photo" style="--photo-delay: 35ms"><img src="/img/about/fun/optimized/fun-k.webp" width="1280" height="1707" alt="Renyin standing beside a flowering plant outdoors" draggable="false" loading="lazy" decoding="async"></figure>
+            <figure class="outside-photo" style="--photo-delay: 70ms"><img src="/img/about/fun/optimized/fun-l.webp" width="1012" height="1800" alt="A vase of pastel-coloured roses" draggable="false" loading="lazy" decoding="async"></figure>
+            <figure class="outside-photo" style="--photo-delay: 105ms"><img src="/img/about/fun/optimized/fun-m.webp" width="1194" height="1800" alt="A close-up of pink peonies" draggable="false" loading="lazy" decoding="async"></figure>
+            <figure class="outside-photo" style="--photo-delay: 140ms"><img src="/img/about/fun/optimized/fun-n.webp" width="1012" height="1800" alt="Red and white flowers arranged in a tall vase" draggable="false" loading="lazy" decoding="async"></figure>
+          </div>
+          <div class="photo-deck-controls">
+            <button type="button" class="photo-deck-prev" aria-label="Previous photo"><span aria-hidden="true">←</span></button>
+            <p class="photo-deck-count" aria-live="polite" aria-atomic="true"></p>
+            <button type="button" class="photo-deck-next" aria-label="Next photo"><span aria-hidden="true">→</span></button>
+          </div>
+          <p class="photo-deck-hint">Drag or swipe to swap photos</p>
+        </div>
+        <div class="outside-panel" role="tabpanel" id="photos-fishing" aria-labelledby="interest-fishing" tabindex="0" hidden>
+          <p class="outside-caption">Slowing down outdoors and enjoying the patience of the process.</p>
+          <div class="outside-collage outside-collage--5">
+            <figure class="outside-photo" style="--photo-delay: 0ms"><img src="/img/about/fun/optimized/fun-o.webp" width="1800" height="1012" alt="Freshly caught fish arranged on the ground" draggable="false" loading="lazy" decoding="async"></figure>
+            <figure class="outside-photo" style="--photo-delay: 35ms"><img src="/img/about/fun/optimized/fun-p.webp" width="787" height="1050" alt="A caught fish beside a dock" draggable="false" loading="lazy" decoding="async"></figure>
+            <figure class="outside-photo" style="--photo-delay: 70ms"><img src="/img/about/fun/optimized/fun-q.webp" width="1012" height="1800" alt="A flatfish caught on a fishing line" draggable="false" loading="lazy" decoding="async"></figure>
+            <figure class="outside-photo" style="--photo-delay: 105ms"><img src="/img/about/fun/optimized/fun-r.webp" width="1012" height="1800" alt="A fishing rod beside the water with a ferry in the distance" draggable="false" loading="lazy" decoding="async"></figure>
+            <figure class="outside-photo" style="--photo-delay: 140ms"><img src="/img/about/fun/optimized/fun-s.webp" width="1350" height="1800" alt="Holding a razor clam in a gloved hand by the shore" draggable="false" loading="lazy" decoding="async"></figure>
+          </div>
+          <div class="photo-deck-controls">
+            <button type="button" class="photo-deck-prev" aria-label="Previous photo"><span aria-hidden="true">←</span></button>
+            <p class="photo-deck-count" aria-live="polite" aria-atomic="true"></p>
+            <button type="button" class="photo-deck-next" aria-label="Next photo"><span aria-hidden="true">→</span></button>
+          </div>
+          <p class="photo-deck-hint">Drag or swipe to swap photos</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Contact and footer -->
+  <footer class="contact" id="contact">
+    <div class="contact-inner reveal">
+      <p class="eyebrow">Contact me</p>
+      <h2>Let’s make something thoughtful.</h2>
+      <a class="contact-email" href="mailto:xutalia83@gmail.com">xutalia83@gmail.com <span aria-hidden="true">↗</span></a>
+      <div class="contact-details">
+        <div><p>Phone</p><a href="tel:+15064293032">+1 (506) 429 3032</a></div>
+        <div><p>Connect</p><a href="https://www.linkedin.com/in/renyin-xu" target="_blank" rel="noopener">LinkedIn</a><a href="https://www.instagram.com/tuk_xu/" target="_blank" rel="noopener">Instagram</a></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <a class="logo logo--footer" href="#main-content" aria-label="Back to top"><img src="/img/rx-logo.png" alt="" width="42" height="42"></a>
+      <p>© <span id="current-year">2026</span> Renyin Xu</p>
+      <a href="#main-content">Back to top ↑</a>
+    </div>
+  </footer>
+  <!-- Vercel Web Analytics: keep this single integration when updating the page. -->
+  <script>
+    window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+  </script>
+  <script defer src="/_vercel/insights/script.js"></script>
+</body>
+</html>
