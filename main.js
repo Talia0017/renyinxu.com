@@ -59,7 +59,7 @@ function updateHeader() {
 updateHeader();
 window.addEventListener("scroll", updateHeader, { passive: true });
 
-const trackedSections = ["home", "projects", "contact"]
+const trackedSections = ["home", "projects", "footer"]
   .map((id) => document.getElementById(id))
   .filter(Boolean);
 
