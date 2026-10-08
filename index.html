@@ -3,205 +3,203 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="How Renyin Xu used inclusive personas and usability testing to refine pickup-location selection and confirmation in the Tim Hortons app.">
+  <meta name="description" content="Renyin Xu is an interaction designer creating thoughtful, inclusive digital product experiences.">
   <meta name="theme-color" content="#f2f2f2">
-  <title>Tim Hortons — Confident Store Selection | Renyin Xu</title>
-  <link rel="icon" type="image/png" href="/img/rx-logo.png">
+  <title>Renyin Xu | Interaction Designer</title>
   <link rel="stylesheet" href="/design.css">
-  <link rel="stylesheet" href="/projects/tim/case-study.css">
-  <link rel="preload" href="/projects/tim/fonts/InterVariable.woff2" as="font" type="font/woff2" crossorigin>
   <script src="/main.js" defer></script>
-  <script src="/projects/tim/case-study.js" defer></script>
 </head>
-<body class="tim-page">
+<body>
   <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- Site navigation -->
   <header class="site-header" data-header>
     <div class="header-inner">
-      <a class="logo" href="/" aria-label="Renyin Xu — Home"><img src="/img/rx-logo.png" alt="" width="42" height="42"></a>
+      <a class="logo" href="/" aria-label="Renyin Xu — Home">
+        <img src="/img/rx-logo.png" alt="" width="42" height="42">
+      </a>
+
       <nav class="desktop-nav" aria-label="Primary navigation">
-        <a href="/">Home</a><a href="/projects/" aria-current="page">Projects</a><a href="/about/">About me</a>
+        <a href="/" aria-current="page">Home</a>
+        <a href="/projects/">Projects</a>
+        <a href="/about/">About me</a>
         <span class="nav-placeholder" role="link" aria-disabled="true">Playground</span>
         <a href="https://drive.google.com/file/d/1fE9w9aS_xGHMlqv6I4rMiQgSVd6DVYRs/view?usp=sharing" target="_blank" rel="noopener">Resume</a>
       </nav>
+
       <a class="header-contact" href="#footer">Contact</a>
-      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu"><span class="menu-toggle__label">Menu</span><span class="menu-toggle__icon" aria-hidden="true"><i></i><i></i></span></button>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu">
+        <span class="menu-toggle__label">Menu</span>
+        <span class="menu-toggle__icon" aria-hidden="true"><i></i><i></i></span>
+      </button>
     </div>
+
     <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation">
-      <a href="/">Home</a><a href="/projects/" aria-current="page">Projects</a><a href="/about/">About me</a>
+      <a href="/" aria-current="page">Home</a>
+      <a href="/projects/">Projects</a>
+      <a href="/about/">About me</a>
       <span class="nav-placeholder" role="link" aria-disabled="true">Playground</span>
-      <a href="https://drive.google.com/file/d/1fE9w9aS_xGHMlqv6I4rMiQgSVd6DVYRs/view?usp=sharing" target="_blank" rel="noopener">Resume</a><a href="#footer">Contact</a>
+      <a href="https://drive.google.com/file/d/1fE9w9aS_xGHMlqv6I4rMiQgSVd6DVYRs/view?usp=sharing" target="_blank" rel="noopener">Resume</a>
+      <a href="#footer">Contact</a>
     </nav>
   </header>
 
-  <main id="main-content" class="tim-study">
-    <section class="tim-hero tim-shell" aria-labelledby="case-title">
-      <p class="tim-label">Tim Hortons · UX / Interaction Design</p>
-      <div class="tim-hero__heading">
-        <h1 id="case-title">From Address Guessing<br><span>to Location&nbsp;Confidence</span></h1>
-        <div class="tim-hero__intro"><p>An inclusive redesign of pickup-location selection and confirmation, helping people order with fewer unnecessary interactions and greater&nbsp;confidence.</p><a class="tim-inline-link" href="#final-prototype">See the final prototype <span aria-hidden="true">↘</span></a></div>
+  <main id="main-content">
+    <!-- Hero introduction -->
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="hero-content">
+        <p class="hero-greeting hero-reveal">Hi I’m</p>
+        <div class="role-window hero-reveal" aria-label="Designer roles">
+          <p class="hero-role" id="rotating-role">an interaction designer</p>
+        </div>
+        <h1 class="hero-name hero-reveal" id="hero-title">Renyin Xu</h1>
+        <p class="hero-introduction hero-reveal">I’m an Interaction Designer focused on thoughtful UX and inclusive product experiences, with the front-end skills to bring ideas closer to life</p>
       </div>
-      <dl class="tim-meta">
-        <div><dt>My contribution</dt><dd>UX research, UI &amp; interaction design</dd></div>
-        <div><dt>Project</dt><dd>2025 · 13 weeks</dd></div>
-        <div><dt>Tools</dt><dd>Figma, ProtoPie, paper prototyping</dd></div>
-        <div><dt>Focus</dt><dd>Inclusive design &amp; usability testing</dd></div>
-      </dl>
-      <figure class="tim-cover"><img src="/img/tim/tim_coverb.png" alt="Redesigned Tim Hortons screens for location selection, cart confirmation, and order preparation" width="1672" height="941" fetchpriority="high"></figure>
-      <p class="tim-disclaimer">Independent student project; not affiliated with or endorsed by Tim Hortons.</p>
+      <a class="scroll-cue hero-reveal" href="#projects">
+        <span>Selected work</span>
+        <span aria-hidden="true">↓</span>
+      </a>
     </section>
 
-    <section class="tim-overview tim-shell" aria-labelledby="overview-title">
-      <div><p class="tim-label">The project in 30 seconds</p><h2 id="overview-title">A clearer location decision.<br>A more confident pickup.</h2><p>I connected the map, address list, and confirmation screens around one focused task: choosing the right store and knowing where to collect an order.</p></div>
-      <dl class="tim-summary">
-        <div><dt>The problem</dt><dd>A small map icon was easy to miss. Similar addresses left users to work out location and distance themselves.</dd></div>
-        <div><dt>My approach</dt><dd>Inclusive personas shaped the priorities. Paper-prototype testing with three participants exposed what still needed to change.</dd></div>
-        <div><dt>What I learned</dt><dd>A visible map helped participants compare stores, but confirmation also needed a route to the actual pickup location.</dd></div>
-      </dl>
+    <!-- Selected projects -->
+    <section class="projects section" id="projects" aria-labelledby="projects-title">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Selected projects</p>
+        <h2 id="projects-title">Designing clearer digital experiences.</h2>
+        <a class="text-link" href="/projects/">View all projects <span aria-hidden="true">↗</span></a>
+      </div>
+
+      <div class="project-list">
+        <article class="project-card reveal">
+          <a class="project-media" href="/projects/tim/" aria-label="Read the Tim Hortons store-selection redesign case study">
+            <img src="/img/tim-hortons/tim-cover.png" alt="Three mobile screens showing the redesigned Tim Hortons store-selection and order flow" width="1672" height="941">
+            <span class="project-action" aria-hidden="true">View case study ↗</span>
+          </a>
+          <div class="project-details">
+            <div class="project-number" aria-hidden="true">01</div>
+            <p class="project-year">2025</p>
+            <h3><a href="/projects/tim/">Rethinking Store Selection in the Tim Hortons App</a></h3>
+            <dl class="project-meta">
+              <div><dt>Project type</dt><dd>Case study</dd></div>
+              <div><dt>Contribution</dt><dd>Independent project · Inclusive design</dd></div>
+            </dl>
+            <a class="text-link" href="/projects/tim/">Read the case study <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+
+        <article class="project-card project-card--reverse reveal">
+          <div class="project-media project-media--pending" aria-label="AHSNB digital experience project image coming soon">
+            <img src="/img/ahsnb/coming-soon.png" alt="Coming soon placeholder for the AHSNB digital experience redesign" width="1254" height="1254">
+            <span class="project-status">Case study coming soon</span>
+          </div>
+          <div class="project-details">
+            <div class="project-number" aria-hidden="true">02</div>
+            <p class="project-year">2026</p>
+            <h3>Rebuilding the AHSNB Digital Experience</h3>
+            <dl class="project-meta">
+              <div><dt>Project type</dt><dd>Summer full-time job</dd></div>
+              <div><dt>Contribution</dt><dd>UI/UX design · Front-end development</dd></div>
+            </dl>
+            <p class="project-note">Detailed case study in progress.</p>
+          </div>
+        </article>
+      </div>
     </section>
 
-    <div class="tim-reading tim-shell">
-      <nav class="tim-index" aria-label="Case study stages">
-        <p class="tim-label">Inside the project</p>
-        <a href="#discover"><span>01</span> Discover</a>
-        <a href="#define"><span>02</span> Define</a>
-        <a href="#develop"><span>03</span> Develop</a>
-        <a href="#deliver"><span>04</span> Deliver</a>
-      </nav>
-      <div class="tim-content">
-        <section class="tim-stage" id="discover" aria-labelledby="discover-title" data-tim-stage>
-          <header class="tim-stage__heading" data-tim-reveal>
-            <p class="tim-label">01 / Understand the mismatch</p><h2 id="discover-title">Discover</h2>
-            <p>A wrong-store order led me to question how the app helps people connect an address with a real place.</p>
-          </header>
-          <div class="tim-origin">
-            <h3>It started with my own coffee order.</h3>
-            <div><p>In my first year, I ordered from a Tim Hortons across the street instead of the one on campus. Unfamiliar with the area, I rushed to collect my coffee and arrived late for class.</p><p>I initially thought the app had no map. A closer review revealed one behind a small icon. The problem became clearer: spatial information was difficult to discover at the moment of choosing a store.</p></div>
-          </div>
-          <div class="tim-block" id="original-experience">
-            <div class="tim-block__intro"><p class="tim-label">The original experience</p><h3>Where the ordering journey breaks down</h3></div>
-            <figure class="tim-annotated">
-              <div class="tim-annotated__phone">
-                <div class="tim-phone">
-                  <img class="tim-phone__screen" src="/img/tim/tim_org_location.png" alt="Original Locations screen: a small map icon at the top right, followed by a text-only list of store addresses" width="628" height="1382" loading="lazy">
-                  <img class="tim-phone__frame" src="/img/tim/refined/phone-frame.png" alt="" width="1996" height="4096" loading="lazy">
-                </div>
-                <span class="tim-marker tim-marker--one" aria-hidden="true">1</span><span class="tim-marker tim-marker--two" aria-hidden="true">2</span>
-              </div>
-              <figcaption class="tim-annotations">
-                <div class="tim-annotation tim-annotation--one"><span class="tim-annotation__number">01</span><h4>A map that is easy to miss</h4><p>The small icon opens a separate view, keeping the map away from the address comparison.</p></div>
-                <div class="tim-annotation tim-annotation--two"><span class="tim-annotation__number">02</span><h4>Addresses without spatial context</h4><p>Similar street names and numbers ask users to mentally translate text into a location.</p></div>
-                <p class="tim-annotations__context">Tapping <strong>Order</strong> takes users from the home screen to this list. Finding the nearest store requires discovering the map or interpreting addresses.</p>
-              </figcaption>
-            </figure>
-          </div>
-          <div class="tim-block">
-            <div class="tim-block__intro"><p class="tim-label">Research → user needs</p><h3>Location uncertainty follows the whole order.</h3><p>I combined user interviews, App Store reviews, and literature research, then used inclusive personas and a journey map to examine how different constraints affected store selection.</p></div>
-            <div class="tim-findings">
-              <div class="tim-findings__head" aria-hidden="true"><span>Research finding</span><span>User need</span><span>Design direction</span></div>
-              <article><h4><span>01</span> A useful feature can go unnoticed.</h4><p><b>User need</b> Spatial context at the moment of choosing.</p><p><b>Design direction</b> Make nearby stores visible on the map by default.</p></article>
-              <article><h4><span>02</span> Similar addresses take effort to decode.</h4><p><b>User need</b> A visual way to compare stores alongside text.</p><p><b>Design direction</b> Connect each map pin with its address card.</p></article>
-              <article><h4><span>03</span> Confidence is needed beyond selection.</h4><p><b>User need</b> Reassurance before paying and travelling.</p><p><b>Design direction</b> Keep the chosen store visible through checkout and pickup.</p></article>
+    <!-- Desktop: this short sequence stays pinned while the panels move sideways. -->
+    <section class="story" id="principles" aria-label="Design beliefs and work approach">
+      <div class="story-stage">
+        <div class="story-progress" aria-hidden="true"><i></i></div>
+        <div class="story-track">
+          <article class="story-panel">
+            <div class="story-copy">
+              <p class="eyebrow">01 · Design beliefs</p>
+              <h2>My Beliefs as an Interaction Designer</h2>
+              <p class="story-intro">I believe good interaction design starts with understanding people. Through research and attention to detail, I aim to create clear, inclusive experiences that help people feel confident and bring ease and enjoyment to everyday interactions.</p>
             </div>
-            <figure class="tim-evidence tim-evidence--journey">
-              <a href="/img/tim/user_journey_map_tim_hortons_redesign_renyin_xu.jpg" target="_blank" rel="noopener" aria-label="Open the original user journey map at full size in a new tab"><img src="/img/tim/user_journey_map_tim_hortons_redesign_renyin_xu.jpg" alt="Original journey map tracing the three personas' actions, pain points, bright spots, and measures through ordering and pickup" width="4399" height="1208" loading="lazy"></a>
-              <figcaption><span>The journey map linked early selection uncertainty with later checkout and pickup decisions.</span><a href="/img/tim/user_journey_map_tim_hortons_redesign_renyin_xu.jpg" target="_blank" rel="noopener">View full map ↗</a></figcaption>
-            </figure>
-          </div>
-          <div class="tim-insight-stage" data-tim-insight>
-            <figure class="tim-insight">
-              <p class="tim-label">The turning point</p>
-              <blockquote><span class="tim-quote-word">“A</span> <em class="tim-quote-word tim-quote-hidden">hidden</em> <span class="tim-quote-word">feature</span> <span class="tim-quote-word">can</span> <span class="tim-quote-word">behave</span> <span class="tim-quote-word">like</span> <span class="tim-quote-word">a</span> <em class="tim-quote-word tim-quote-missing">missing</em> <span class="tim-quote-word">feature.”</span></blockquote>
-              <figcaption>My project takeaway</figcaption>
-            </figure>
-          </div>
-        </section>
-
-        <section class="tim-stage" id="define" aria-labelledby="define-title" data-tim-stage>
-          <header class="tim-stage__heading" data-tim-reveal><p class="tim-label">02 / Turn barriers into priorities</p><h2 id="define-title">Define</h2><p>The same ordering flow asks different things of different people. These inclusive personas made those mismatches concrete.</p></header>
-          <div class="tim-block__intro"><p class="tim-label">My original inclusive personas</p><h3 id="personas-title">One task. Three different barriers.</h3><p>These are design personas, not the test participants. Their situational, temporary, and permanent constraints informed the choices below.</p></div>
-          <div class="tim-persona-carousel" role="region" aria-labelledby="personas-title">
-          <div class="tim-personas" id="persona-track">
-            <article class="tim-persona">
-              <a class="tim-persona__board" href="/img/tim/tim_personaa.png" target="_blank" rel="noopener" aria-label="View Alex Matin's original persona board in a new tab"><img src="/img/tim/tim_personaa.png" alt="Original inclusive persona board for Alex Matin" width="2674" height="1498" loading="lazy"><span>View original persona ↗</span></a>
-              <div class="tim-persona__copy"><p class="tim-label">Situational / Divided attention</p><h4>Alex Matin</h4><p>A student ordering while rushing through a crowded hallway.</p><dl><div><dt>Barrier</dt><dd>Little attention to spare for comparing similar addresses.</dd></div><div><dt>Need → decision</dt><dd>Fast spatial recognition → show nearby pins upfront so proximity is visible.</dd></div></dl></div>
-            </article>
-            <article class="tim-persona">
-              <a class="tim-persona__board" href="/img/tim/tim_personab.png" target="_blank" rel="noopener" aria-label="View Jordan Handerson's original persona board in a new tab"><img src="/img/tim/tim_personab.png" alt="Original inclusive persona board for Jordan Handerson" width="2782" height="1496" loading="lazy"><span>View original persona ↗</span></a>
-              <div class="tim-persona__copy"><p class="tim-label">Temporary / Injured dominant wrist</p><h4>Jordan Handerson</h4><p>A designer ordering with one non-dominant hand while recovering from an injury.</p><dl><div><dt>Barrier</dt><dd>Repeated tapping and switching views make a simple choice frustrating.</dd></div><div><dt>Need → decision</dt><dd>Less back-and-forth → combine the map and list with connected selection feedback.</dd></div></dl></div>
-            </article>
-            <article class="tim-persona">
-              <a class="tim-persona__board" href="/img/tim/tim_personac.png" target="_blank" rel="noopener" aria-label="View Maya Thomas's original persona board in a new tab"><img src="/img/tim/tim_personac.png" alt="Original inclusive persona board for Maya Thomas" width="2674" height="1526" loading="lazy"><span>View original persona ↗</span></a>
-              <div class="tim-persona__copy"><p class="tim-label">Permanent / Dyslexia</p><h4>Maya Thomas</h4><p>A student in a quiet library without earbuds for her usual text-to-speech support.</p><dl><div><dt>Barrier</dt><dd>Similar street names and numbers are tiring to decode.</dd></div><div><dt>Need → decision</dt><dd>Visual cues alongside text → pair each address with a distinct position on the map.</dd></div></dl></div>
-            </article>
-          </div>
-          <div class="tim-persona-controls" hidden>
-            <p class="tim-persona-position" aria-live="off"><span data-persona-current>01</span> / 03</p>
-            <div class="tim-persona-dots" aria-label="Choose a persona">
-              <button type="button" data-persona-go="0" aria-label="Show Alex Matin" aria-current="true"><span></span></button>
-              <button type="button" data-persona-go="1" aria-label="Show Jordan Handerson"><span></span></button>
-              <button type="button" data-persona-go="2" aria-label="Show Maya Thomas"><span></span></button>
-            </div>
-            <div class="tim-persona-actions">
-              <button type="button" data-persona-prev aria-controls="persona-track" aria-label="Previous persona">←</button>
-              <button class="tim-persona-toggle" type="button" data-persona-toggle aria-controls="persona-track">Pause autoplay</button>
-              <button type="button" data-persona-next aria-controls="persona-track" aria-label="Next persona">→</button>
-            </div>
-          </div>
-          </div>
-          <div class="tim-question" data-tim-reveal><p class="tim-label">The focused design question</p><h3>How might I make choosing and confirming a pickup store clear for people ordering under different constraints?</h3><p>Make location visible. Keep map and address connected. Carry the choice through the order.</p></div>
-        </section>
-
-        <section class="tim-stage" id="develop" aria-labelledby="develop-title" data-tim-stage>
-          <header class="tim-stage__heading" data-tim-reveal><p class="tim-label">03 / Test the complete task</p><h2 id="develop-title">Develop</h2><p>Paper prototyping let me test my assumptions about location selection before committing to the final interface.</p></header>
-          <div class="tim-test-intro"><div><p class="tim-label">Usability testing</p><h3>Three participants.<br>One complete pickup journey.</h3><p>Participants used the paper prototype under simulated constraints, including distraction and one-handed interaction. Pickup was simulated in a room with chairs representing stores.</p></div><ol class="tim-tasks"><li><span>01</span><p>Find and select the closest store.</p></li><li><span>02</span><p>Order a medium iced coffee for pickup.</p></li><li><span>03</span><p>Identify and move to the correct simulated store.</p></li></ol></div>
-          <figure class="tim-evidence"><a href="/img/tim/2026-08-06_183950_646.png" target="_blank" rel="noopener" aria-label="Open the paper prototype at full size in a new tab"><img src="/img/tim/2026-08-06_183950_646.png" alt="Paper prototype components: address list, cart location confirmation, payment, review order, and current location control" width="2320" height="1372" loading="lazy"></a><figcaption>The paper flow connected store selection, checkout, and pickup, making it possible to observe the complete task.</figcaption></figure>
-          <div class="tim-block">
-            <div class="tim-block__intro"><p class="tim-label">Observation → iteration</p><h3>Two observations changed the design.</h3></div>
-            <article class="tim-iteration"><div class="tim-iteration__number" aria-hidden="true">01</div><div><h4>Showing a map was only the starting point.</h4><p><strong>Observed:</strong> participants still noticed addresses first. The map helped them compare proximity, but my first prototype displayed a store pin only after an address was selected.</p><p><strong>Changed:</strong> show all nearby pins upfront and connect them with the store cards. Users can begin with the map or the list.</p></div></article>
-            <div class="tim-comparison" aria-label="Location selection before and after testing">
-              <figure><p class="tim-label">Before / Paper prototype</p><img class="tim-paper-screen" src="/img/tim/refined/paper-address-list.webp" alt="Address-list component from the original paper prototype, showing similar street names and order buttons" width="487" height="588" loading="lazy"><figcaption><strong>Choose an address, then see its pin.</strong>The address-list component of the first prototype.</figcaption></figure>
-              <span class="tim-comparison__arrow" aria-hidden="true">→</span>
-              <figure><p class="tim-label">After / Final design</p><div class="tim-phone"><img class="tim-phone__screen" src="/img/tim/final-location-selection.png" alt="Revised design showing all nearby map pins above the connected store cards" width="772" height="1680" loading="lazy"><img class="tim-phone__frame" src="/img/tim/refined/phone-frame.png" alt="" width="1996" height="4096" loading="lazy"></div><figcaption><strong>See nearby stores before choosing.</strong>Map and list support the same decision.</figcaption></figure>
-            </div>
-            <article class="tim-iteration"><div class="tim-iteration__number" aria-hidden="true">02</div><div><h4>Confirmation did not yet help people get there.</h4><p><strong>Observed:</strong> participants relied mostly on text after ordering; the confirmation map alone did not help them navigate to the store.</p><p><strong>Changed:</strong> keep the chosen location visible and add a direct Google Maps link on the order preparation screen.</p></div></article>
-            <p class="tim-limit">Evidence boundary: these were qualitative observations from three paper-prototype sessions. Simulated constraints do not represent lived disability experience. The final changes still need follow-up testing.</p>
-          </div>
-        </section>
-
-        <section class="tim-stage" id="deliver" aria-labelledby="deliver-title" data-tim-stage>
-          <header class="tim-stage__heading" data-tim-reveal><p class="tim-label">04 / Keep location in view</p><h2 id="deliver-title">Deliver</h2><p>I brought the revised flow into ProtoPie, carrying location context from the first choice to the moment of pickup.</p></header>
-          <div class="tim-prototype" id="final-prototype">
-            <p class="tim-label">From the tested concept to the final flow</p><h3>Final Interactive Prototype</h3><p>I built this prototype in ProtoPie to demonstrate the complete ordering flow. Play the recording to see how the location interactions work.</p>
-            <figure class="tim-prototype__figure">
-              <div class="tim-phone tim-phone--video">
-                <video class="tim-phone__screen" id="prototype-video" controls playsinline preload="metadata" poster="/img/tim/refined/prototype-poster.webp" width="720" height="1562" aria-label="Video walkthrough of the final Tim Hortons ProtoPie prototype" aria-describedby="prototype-description"><source src="/img/tim/refined/prototype-portrait.mp4" type="video/mp4">Your browser cannot play this video. <a href="/img/tim/refined/prototype-portrait.mp4">Open the prototype recording.</a></video>
-                <img class="tim-phone__frame" src="/img/tim/refined/phone-frame.png" alt="" width="1996" height="4096" loading="lazy">
-                <button class="tim-video-play" type="button" aria-controls="prototype-video" aria-label="Play prototype walkthrough" hidden><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="m8 5 11 7-11 7Z" fill="currentColor"/></svg></button>
-              </div>
-              <figcaption id="prototype-description"><span>ProtoPie walkthrough · 3 min 51 sec</span><a href="/img/tim/refined/prototype-portrait.mp4" target="_blank" rel="noopener">Open video ↗</a></figcaption>
-              <p class="tim-video-status" role="status"></p>
-            </figure>
-          </div>
-          <div class="tim-journey" aria-label="Three location checkpoints" data-tim-journey>
-            <div class="tim-journey__line" aria-hidden="true"><span></span></div>
-            <ol class="tim-journey__steps">
-              <li><div class="tim-journey__step"><span>01</span><p>Choose</p></div><div class="tim-phone"><img class="tim-phone__screen" src="/img/tim/final-location-selection.png" alt="Final location selection screen with nearby map pins above matching store cards" width="772" height="1680" loading="lazy"><img class="tim-phone__frame" src="/img/tim/refined/phone-frame.png" alt="" width="1996" height="4096" loading="lazy"></div><h4>Location Selection</h4><p>Map pins and address cards appear together. Selecting either highlights the matching store, connecting place and address.</p></li>
-              <li><div class="tim-journey__step"><span>02</span><p>Confirm</p></div><div class="tim-phone"><img class="tim-phone__screen" src="/img/tim/final-cart-confirmation.png" alt="Final cart showing the selected pickup location and address before checkout" width="752" height="1640" loading="lazy"><img class="tim-phone__frame" src="/img/tim/refined/phone-frame.png" alt="" width="1996" height="4096" loading="lazy"></div><h4>Cart Confirmation</h4><p>The chosen pickup location stays visible before checkout, giving users a chance to verify the address before paying.</p></li>
-              <li><div class="tim-journey__step"><span>03</span><p>Find your way</p></div><div class="tim-phone"><img class="tim-phone__screen" src="/img/tim/refined/order-preparation.png" alt="Final order preparation screen showing pickup address, map, and a Google Map navigation link" width="694" height="1500" loading="lazy"><img class="tim-phone__frame" src="/img/tim/refined/phone-frame.png" alt="" width="1996" height="4096" loading="lazy"></div><h4>Order Preparation</h4><p>The location remains visible after ordering. A Google Maps link supports the next task: reaching the correct store.</p></li>
+            <ol class="principle-list">
+              <li><span>01</span><div><h3>Research first</h3><p>Understand before creating.</p></div></li>
+              <li><span>02</span><div><h3>Small cues matter</h3><p>Labels, timing, and reassurance shape confidence.</p></div></li>
+              <li><span>03</span><div><h3>Inclusive by default</h3><p>Design for different abilities and expectations.</p></div></li>
             </ol>
-          </div>
-          <div class="tim-outcomes tim-block">
-            <div class="tim-block__intro"><p class="tim-label">Learning &amp; potential value</p><h3>What the evidence supports.<br>What I would validate next.</h3></div>
-            <dl><div><dt>Observed in testing</dt><dd>The integrated map helped participants compare locations. The pickup task exposed a need for navigation beyond confirmation.</dd></div><div><dt>Potential business value</dt><dd>Clearer choices could reduce wrong-location orders and service friction. A more understandable flow could reduce abandonment and strengthen customer confidence. These benefits have not been measured.</dd></div><div><dt>Next validation</dt><dd>Test the final prototype against the original flow. Measure task completion, location-selection time, and unnecessary interactions; evaluate wrong-location orders and abandonment in a live product.</dd></div></dl>
-          </div>
-          <div class="tim-reflection" data-tim-reveal><p class="tim-label">Reflection</p><h3>A complete task ends at the right store.</h3><p>Inclusive design helped me see beyond a successful tap. Testing challenged my assumption that selecting a store was enough: people also needed to confirm it and get there.</p><p>I would audit existing flows more carefully at the start, involve people with lived accessibility needs, and validate screen-reader labels, map alternatives, and touch targets in the next round.</p><a class="tim-inline-link" href="/projects/">Back to all projects <span aria-hidden="true">↗</span></a></div>
-        </section>
+          </article>
+
+          <article class="story-panel story-panel--red">
+            <div class="story-copy">
+              <p class="eyebrow">02 · Work approach</p>
+              <h2>My Approach to Work</h2>
+              <p class="story-intro">I take ownership of my work, plan with purpose, and strive to go beyond expectations while meeting deadlines. I value clear communication and collaboration across teams, and I use feedback and reflection to keep improving.</p>
+            </div>
+            <ol class="principle-list">
+              <li><span>01</span><div><h3>Ownership</h3><p>Plan clearly and follow through.</p></div></li>
+              <li><span>02</span><div><h3>Collaboration</h3><p>Share progress and ask early.</p></div></li>
+              <li><span>03</span><div><h3>Growth</h3><p>Reflect, seek feedback, and apply it.</p></div></li>
+            </ol>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills and services -->
+    <section class="capabilities section" id="services" aria-labelledby="capabilities-title">
+      <div class="section-heading reveal">
+        <p class="eyebrow">What I can do</p>
+        <h2 id="capabilities-title">From understanding the problem to bringing the experience to life.</h2>
+        <a class="text-link" href="/about/">Learn more about me <span aria-hidden="true">↗</span></a>
+      </div>
+
+      <div class="capability-grid">
+        <article class="capability-card reveal">
+          <p class="capability-number">01</p>
+          <h3>UX Research &amp; Strategy</h3>
+          <ul>
+            <li>Uncover user needs through research, observation, and contextual analysis</li>
+            <li>Identify friction points, accessibility barriers, and opportunities for improvement</li>
+            <li>Map user journeys and flows to understand how people move through an experience</li>
+            <li>Translate insights into clear design decisions, product direction, and measurable experience goals</li>
+          </ul>
+        </article>
+        <article class="capability-card reveal">
+          <p class="capability-number">02</p>
+          <h3>UI &amp; Interaction Design</h3>
+          <ul>
+            <li>Logo and brand identity design</li>
+            <li>Social media graphics and ad creatives</li>
+            <li>Infographics and data visualization</li>
+            <li>Custom illustrations and icons</li>
+          </ul>
+        </article>
+        <article class="capability-card reveal">
+          <p class="capability-number">03</p>
+          <h3>Design to Development</h3>
+          <ul>
+            <li>Responsive website design</li>
+            <li>Landing page design and optimization</li>
+            <li>Webflow development and customization</li>
+            <li>Website maintenance and updates</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- Contact and footer -->
+  <footer class="contact" id="footer">
+    <div class="contact-inner reveal">
+      <p class="eyebrow">Contact me</p>
+      <h2>Let’s make something thoughtful.</h2>
+      <a class="contact-email" href="mailto:xutalia83@gmail.com">xutalia83@gmail.com <span aria-hidden="true">↗</span></a>
+      <div class="contact-details">
+        <div><p>Phone</p><a href="tel:+15064293032">+1 (506) 429 3032</a></div>
+        <div><p>Connect</p><a href="https://www.linkedin.com/in/renyin-xu" target="_blank" rel="noopener">LinkedIn</a><a href="https://www.instagram.com/tuk_xu/" target="_blank" rel="noopener">Instagram</a></div>
       </div>
     </div>
-  </main>
-  <footer class="contact" id="footer">
-    <div class="contact-inner"><p class="eyebrow">Contact me</p><h2>Let’s make something thoughtful.</h2><a class="contact-email" href="mailto:xutalia83@gmail.com">xutalia83@gmail.com <span aria-hidden="true">↗</span></a><div class="contact-details"><div><p>Phone</p><a href="tel:+15064293032">+1 (506) 429 3032</a></div><div><p>Connect</p><a href="https://www.linkedin.com/in/renyin-xu" target="_blank" rel="noopener">LinkedIn</a><a href="https://www.instagram.com/tuk_xu/" target="_blank" rel="noopener">Instagram</a></div></div></div>
-    <div class="footer-bottom"><a class="logo logo--footer" href="#main-content" aria-label="Back to top"><img src="/img/rx-logo.png" alt="" width="42" height="42"></a><p>© <span id="current-year">2026</span> Renyin Xu</p><a href="#main-content">Back to top ↑</a></div>
+    <div class="footer-bottom">
+      <a class="logo logo--footer" href="#home" aria-label="Back to top"><img src="/img/rx-logo.png" alt="" width="42" height="42"></a>
+      <p>© <span id="current-year">2026</span> Renyin Xu</p>
+      <a href="#home">Back to top ↑</a>
+    </div>
   </footer>
   <!-- Vercel Web Analytics: keep this single integration when updating the page. -->
   <script>
