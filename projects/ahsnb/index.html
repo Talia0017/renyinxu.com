@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AHSNB website redesign by Renyin Xu: clearer navigation, consistent visual design, and more manageable community content.">
+  <meta name="theme-color" content="#f2f2f2">
+  <title>AHSNB Website Redesign | Renyin Xu</title>
+  <link rel="stylesheet" href="/design.css">
+  <link rel="stylesheet" href="/projects/ahsnb/project.css">
+  <link rel="icon" type="image/png" href="/img/rx-logo.png">
+  <script src="/main.js" defer></script>
+  <script src="/projects/ahsnb/project.js" defer></script>
+</head>
+<body class="ahsnb-page">
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- Site navigation -->
+  <header class="site-header" data-header>
+    <div class="header-inner">
+      <a class="logo" href="/" aria-label="Renyin Xu — Home">
+        <img src="/img/rx-logo.png" alt="" width="42" height="42">
+      </a>
+
+      <nav class="desktop-nav" aria-label="Primary navigation">
+        <a href="/">Home</a>
+        <a href="/projects/" aria-current="page">Projects</a>
+        <a href="/about/">About me</a>
+        <span class="nav-placeholder" role="link" aria-disabled="true">Playground</span>
+        <a href="https://drive.google.com/file/d/1fE9w9aS_xGHMlqv6I4rMiQgSVd6DVYRs/view?usp=sharing" target="_blank" rel="noopener">Resume</a>
+      </nav>
+
+      <a class="header-contact" href="#footer">Contact</a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu">
+        <span class="menu-toggle__label">Menu</span>
+        <span class="menu-toggle__icon" aria-hidden="true"><i></i><i></i></span>
+      </button>
+    </div>
+
+    <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation">
+      <a href="/">Home</a>
+      <a href="/projects/" aria-current="page">Projects</a>
+      <a href="/about/">About me</a>
+      <span class="nav-placeholder" role="link" aria-disabled="true">Playground</span>
+      <a href="https://drive.google.com/file/d/1fE9w9aS_xGHMlqv6I4rMiQgSVd6DVYRs/view?usp=sharing" target="_blank" rel="noopener">Resume</a>
+      <a href="#footer">Contact</a>
+    </nav>
+  </header>
+
+  <main id="main-content" class="ahsnb-project">
+    <div class="ahsnb-shell">
+      <section class="ahsnb-identity ahsnb-enter" aria-labelledby="ahsnb-title">
+        <p class="eyebrow ahsnb-label">AHSNB · Website redesign</p>
+        <div class="ahsnb-heading">
+          <h1 id="ahsnb-title">AHSNB Website Redesign</h1>
+          <p class="ahsnb-subtitle">Creating a clearer, more welcoming community website.</p>
+        </div>
+        <dl class="ahsnb-meta">
+          <div>
+            <dt>Organization</dt>
+            <dd>Asian Heritage Society of New Brunswick</dd>
+          </div>
+          <div>
+            <dt>My role</dt>
+            <dd>UI/UX Web Designer &amp; Developer</dd>
+          </div>
+        </dl>
+      </section>
+
+      <figure class="ahsnb-cover">
+        <img src="/img/ahsnb/ahsnb_cover.png" alt="Asian Heritage Society of New Brunswick logo on a warm cream background" width="1586" height="992" fetchpriority="high">
+      </figure>
+
+      <div class="ahsnb-reading">
+        <nav class="ahsnb-index" aria-label="Inside the AHSNB project">
+          <a class="ahsnb-index-back" href="/projects/"><span aria-hidden="true">←</span> Back to all projects</a>
+          <p class="eyebrow">Inside the project</p>
+          <a href="#project-introduction"><span>01</span> Overview</a>
+          <a href="#design-priorities"><span>02</span> Design priorities</a>
+        </nav>
+        <div class="ahsnb-content">
+          <section class="ahsnb-introduction" id="project-introduction" aria-labelledby="introduction-title" data-ahsnb-section>
+            <h2 class="ahsnb-section-title" id="introduction-title">Project introduction</h2>
+            <div class="ahsnb-copy">
+              <p>I led the redesign and launch of AHSNB’s website, focusing on three priorities: clearer navigation, consistent visual design, and more manageable content.</p>
+              <p>Starting with ambiguous requirements, limited time, and limited resources, I worked closely with my supervisor and stakeholders to clarify priorities and guide the design process. I reorganized the information architecture, established reusable visual patterns, and divided dense content into clearer pages and sections.</p>
+              <p>When unexpected database and hosting issues threatened the launch, I took ownership of coordinating troubleshooting with the hosting provider and restoring the site. The project expanded the original 11-page website into a 17-page responsive experience designed to make community information easier to find and explore.</p>
+            </div>
+          </section>
+
+          <section class="ahsnb-priorities" id="design-priorities" aria-labelledby="priorities-title" data-ahsnb-section>
+            <h2 class="ahsnb-section-title" id="priorities-title">Core design priorities</h2>
+            <div class="ahsnb-priority-grid">
+              <article class="ahsnb-priority">
+                <h3><span class="ahsnb-priority-number">01 —</span> Clearer Navigation</h3>
+                <p>Reorganized the site structure and navigation to make key information easier to find.</p>
+              </article>
+              <article class="ahsnb-priority">
+                <h3><span class="ahsnb-priority-number">02 —</span> Visual Consistency</h3>
+                <p>Established consistent typography, colour, spacing, and reusable UI patterns across the website.</p>
+              </article>
+              <article class="ahsnb-priority">
+                <h3><span class="ahsnb-priority-number">03 —</span> More Manageable Content</h3>
+                <p>Restructured dense organizational content into focused pages and scannable sections.</p>
+              </article>
+            </div>
+          </section>
+
+          <section class="ahsnb-coming-soon" aria-labelledby="coming-soon-title">
+            <h2 class="ahsnb-section-title" id="coming-soon-title">Case study in progress</h2>
+            <p>I’m still editing this case study. More details are coming soon. Stay tuned.</p>
+          </section>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Contact and footer -->
+  <footer class="contact" id="footer">
+    <div class="contact-inner">
+      <p class="eyebrow">Contact me</p>
+      <h2>Let’s make something thoughtful.</h2>
+      <a class="contact-email" href="mailto:xutalia83@gmail.com">xutalia83@gmail.com <span aria-hidden="true">↗</span></a>
+      <div class="contact-details">
+        <div><p>Phone</p><a href="tel:+15064293032">+1 (506) 429 3032</a></div>
+        <div><p>Connect</p><a href="https://www.linkedin.com/in/renyin-xu" target="_blank" rel="noopener">LinkedIn</a><a href="https://www.instagram.com/tuk_xu/" target="_blank" rel="noopener">Instagram</a></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <a class="logo logo--footer" href="#main-content" aria-label="Back to top"><img src="/img/rx-logo.png" alt="" width="42" height="42"></a>
+      <p>© <span id="current-year">2026</span> Renyin Xu</p>
+      <a href="#main-content">Back to top ↑</a>
+    </div>
+  </footer>
+  <!-- Vercel Web Analytics: keep this single integration when updating the page. -->
+  <script>
+    window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+  </script>
+  <script defer src="/_vercel/insights/script.js"></script>
+</body>
+</html>
